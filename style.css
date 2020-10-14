@@ -13,6 +13,10 @@ html, body {
     cursor: pointer; 
 }
 
+#overlay {
+  display: none;
+}
+
 #modal {
   background-color: orange;
   padding: 20px;
