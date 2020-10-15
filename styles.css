@@ -10,6 +10,7 @@
 
 /* Shows only the first image of the carousel. */
 .carousel-item-visible {
+    animation: fadeVisibility 0.5s;
     display: block;
 }
 
@@ -50,4 +51,15 @@
 
 #carousel-button-next {
     margin-right: 10px;
+}
+
+@keyframes fadeVisibility {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
