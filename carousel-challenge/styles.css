@@ -53,6 +53,7 @@
     margin-right: 10px;
 }
 
+/* fadding animation for the slides when they are shown */
 @keyframes fadeVisibility {
 
   0% {
