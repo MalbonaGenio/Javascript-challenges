@@ -22,7 +22,7 @@
 
 /* use display flex so the buttons expand to all the available space. with to set the limit where they can expand and justify content to put them on the sides. */
 
-/* with translateY -50% we postion on exactly the 50% of the top50% as top50% does not take in account all the height of the element, in this case .carousel-actions. thats why, if we remove top 50% the buttons move to the bottom again. */
+/* with translateY -50% we postion on exactly the 50% of the top50%. Top applies 50% from page/container height, transform: translateY applies -50% from own element height.*/
 .carousel .carousel-actions {
     display: flex;
     width: 100%;
