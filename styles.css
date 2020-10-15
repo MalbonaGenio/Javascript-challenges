@@ -4,7 +4,7 @@
 }
 
 /* hiddes all img */
-.carousel-item {
+.carousel-item, .carousel-item-hidden {
     display: none;
 }
 

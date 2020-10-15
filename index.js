@@ -6,6 +6,7 @@ document.getElementById('carousel-button-next').addEventListener('click', toNext
 document.getElementById('carousel-button-prev').addEventListener('click', toPrevSlide)
 
 function toNextSlide() {
+    hideAllSlides()
     if (slidePosition === totalSlides - 1){
         slidePosition = 0
     }
@@ -17,4 +18,11 @@ function toNextSlide() {
 
 function toPrevSlide() {
      
+}
+
+function hideAllSlides (){
+    for (const images of slides) {
+        images.classList.remove("carousel-item-visible")
+        images.classList.add("carousel-item-hidden")
+    }
 }
